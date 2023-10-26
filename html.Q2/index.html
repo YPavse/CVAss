@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h2>Customer Survey Form</h2>
+       <form id="surveyForm"  onsubmit="return validateForm()">
+        <fieldset>
+        <div id="name1">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" 
+        </div>
+        <div id="name2">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" required>
+        </div>
+        <div id="pro">
+            <label for="profession">Profession</label>
+            <input type="text" id="profession" name="profession" required>
+        </div>
+        <div id="mail">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div id="mnum">
+            <label for="mobile">Mobile Number</label>
+            <input type="tel" id="mobile" name="mobile" required>
+        </div>
+        <div id="birth">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+        <div id="con">
+            <label for="country">Country</label>
+            <select id="country" name="country" required>
+                <option value="India">India</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div id="gen">
+            <label>Gender</label>
+            <label id="gen1"><input type="checkbox" name="gender" value="Male"> Male</label>
+            <label id="gen1"><input type="checkbox" name="gender" value="Female"> Female</label>
+        </div>
+        <div id="btn">
+            <button type="submit">Submit</button>
+            <button type="button" onclick="resetForm()">Reset</button>
+        </div>
+    </fieldset>
+       </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

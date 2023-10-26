@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html ,body {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(100, 92, 92);
+    color: white;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 45px;
+  font-weight: bold;
+  color: black;
+}
+label{
+    display: block;
+    padding-left: 13px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+form{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+margin: 0px auto;
+padding: 30px 30px ;
+max-width: 600px;
+}
+
+input{
+    width: 500px;
+    height: 30px;
+    margin: 10px;
+}
+
+fieldset{
+    padding: 20px;
+}
+
+#con{
+    display: flex;
+    margin-bottom: 10px;
+}
+#con select{
+    padding-left: 120px;
+    margin-left: 20px;
+}
+
+#gen input{
+    display: flex;
+    display: inline;
+    height: 15px;
+    width: 15px;
+}
+
+#gen1 {
+    display: inline;
+ font-size: 13px;
+}
+
+#btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+button{
+    margin: 3px 30px;
+    padding: 7px 30px;
+}

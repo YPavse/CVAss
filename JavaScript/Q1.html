@@ -1,0 +1,32 @@
+ <!-- A. Take a sentence as an input and reverse every word in that sentence.
+ a. Example - This is a sunny day > shiT si a ynnus yad. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="userInput" placeholder="Enter a sentence">
+    <button onclick="reverseSentence()">Reverse</button>
+    <p id="reversedSentence"></p>
+
+    <script>
+        function reverse(sentence) {
+            const words = sentence.split(' ');
+            const reversedWords = words.map(word => {
+                return word.split('').reverse().join('');
+            });
+            const reversedSentence = reversedWords.join(' ');
+            return reversedSentence;
+        }
+
+        function reverseSentence() {
+            const userInput = document.getElementById("userInput").value;
+            const reversed = reverse(userInput);
+            document.getElementById("reversedSentence").textContent = reversed;
+        }
+    </script>
+</body>
+</html>
